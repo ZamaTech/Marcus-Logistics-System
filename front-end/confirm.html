@@ -5,15 +5,49 @@
     <title>Confirm Request</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="confirm.css">
 </head>
 <body>
 
 <section class="booking-section">
-    <div class="booking-container">
-        <h1>Confirm Your Request</h1>
-        <p>Please review the information before sending.</p>
+    <div class="booking-container confirmation-page">
+        <div class="ticket" aria-label="Booking confirmation ticket">
+            <header class="ticket-header">
+                <div class="ticket-brand">
+                    <div>
+                    <span class="ticket-kicker">Marcus Logistics and Shuttle Services (Pty) Ltd</span>
+                    <h1 id="ticketTitle">Ride ticket</h1>
+                    </div>
+                </div>
+                <div class="ticket-mark">
+                    <img class="ticket-logo" src="Images/logo.png" alt="Marcus Logistics and Shuttle Services (Pty) Ltd logo">
+                </div>
+            </header>
 
-        <pre id="summaryBox"></pre>
+            <div class="ticket-content">
+                <div class="ticket-main">
+                    <div class="ticket-status">
+                        <span class="status-dot"></span>
+                        <span>Ready to send</span>
+                    </div>
+
+                    <div class="ticket-body">
+                        <p class="ticket-instruction">Review your trip details before sending.</p>
+                        <pre id="summaryBox"></pre>
+                    </div>
+                </div>
+
+                <aside class="ticket-stub" aria-label="Tear away ride pass">
+                    <span class="stub-label">Tear away</span>
+                    <strong id="ticketStubTitle">Ride pass</strong>
+                    <span class="stub-caption">You're almost there.<br>Click Send via WhatsApp<br>to book your ride.</span>
+                    <div class="stub-barcode" aria-hidden="true">
+                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <span class="stub-code">ML-BOOKING</span>
+                </aside>
+            </div>
+        </div>
 
         <div class="form-actions">
             <a href="userDashboard.html" class="btn secondary">Cancel</a>

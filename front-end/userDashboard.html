@@ -9,6 +9,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="Dashboard.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dashboard-page.css" />
 </head>
 
 <body>
@@ -21,24 +22,41 @@
             </button>
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#about-me">About Us</a></li>
                 <li><a href="#Contact-me">Contact Me</a></li>
             </ul>
         </nav>
     </div>
 
     <!-- DASHBOARD -->
-    <section class="dashboard-section">
+    <section class="dashboard-section welcome-dashboard">
         <div class="dashboard-container">
-            <h1 class="dashboard-title">Welcome to Your Dashboard</h1>
-            <p class="dashboard-desc">
-                Manage your transportation and parcel delivery services with ease.
-            </p>
+            <div class="dashboard-hero">
+                <div class="dashboard-brand">
+                    <img src="Images/logo.png" alt="Marcus Logistics and Shuttle Services (Pty) Ltd logo">
+                    <div>
+                        <span>Marcus Logistics and Shuttle Services (Pty) Ltd</span>
+                        <h1 class="dashboard-title">Welcome aboard</h1>
+                    </div>
+                </div>
+                <p class="dashboard-desc">
+                    Your next journey starts here. Choose a service below to get moving.
+                </p>
+                <div class="dashboard-route" aria-hidden="true">
+                    <span></span><i class="fas fa-road"></i><span></span>
+                </div>
+            </div>
+
+            <div class="dashboard-services-heading">
+                <span>Choose a service</span>
+                <div></div>
+            </div>
 
             <div class="action-grid">
 
                 <!-- RIDE REQUEST -->
                 <div class="action-card">
+                    <span class="service-label">Passenger service</span>
                     <div class="icon-box">
                         <i class="fas fa-car"></i>
                     </div>
@@ -49,6 +67,7 @@
 
                 <!-- PARCEL DELIVERY -->
                 <div class="action-card">
+                    <span class="service-label">Delivery service</span>
                     <div class="icon-box">
                         <i class="fas fa-box"></i>
                     </div>

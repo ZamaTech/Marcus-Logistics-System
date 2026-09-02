@@ -26,25 +26,25 @@ if (bookingForm) {
         const notes = bookingForm.querySelector('textarea').value || 'None';
 
         const message =
-`🚗 NEW RIDE BOOKING
+`[NEW RIDE BOOKING]
 
-👤 Name: ${name}
-📞 WhatsApp: ${phone}
-📧 Email: ${email}
+Name: ${name}
+WhatsApp: ${phone}
+Email: ${email}
 
-📍 Pickup: ${pickup},
+Pickup: ${pickup},
 ${pickupSuburb},
 ${pickupCity}
 
-🏁 Destination: ${destination},
+Destination: ${destination},
 ${destinationSuburb},
 ${destinationCity}
 
-📅 Date: ${date}
-💼 Luggage: ${luggage}
-👥 Passengers: ${passengers}
+Date: ${date}
+Luggage: ${luggage}
+Passengers: ${passengers}
 
-📝 Notes: ${notes}`;
+Notes: ${notes}`;
 
         sessionStorage.setItem('whatsappMessage', message);
         window.location.href = 'confirm.html';

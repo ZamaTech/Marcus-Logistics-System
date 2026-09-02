@@ -1,0 +1,192 @@
+.booking-ride-page {
+  background:
+    linear-gradient(135deg, rgba(16, 34, 75, 0.06) 25%, transparent 25%) 0 0 / 28px 28px,
+    #e9eef4;
+}
+
+.booking-ride-page .booking-container {
+  max-width: 980px;
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid #d9d4c9;
+  border-radius: 4px;
+  background: #fffdf8;
+  box-shadow: 0 24px 55px rgba(16, 34, 75, 0.16);
+}
+
+.booking-ride-page .booking-header {
+  position: relative;
+  padding: 34px 46px 40px;
+  background: #10224b;
+  color: #fff;
+  text-align: left;
+}
+
+.booking-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+  color: #f4b844;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.booking-brand img {
+  width: 54px;
+  height: 54px;
+  padding: 3px;
+  border: 2px solid #f4b844;
+  border-radius: 50%;
+  background: #fff;
+  object-fit: contain;
+}
+
+.booking-ride-page .booking-header h1 {
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: left;
+  font-size: 2.6rem;
+}
+
+.booking-ride-page .booking-header p {
+  max-width: 600px;
+  margin: 0;
+  color: #d8dfeb;
+  text-align: left;
+}
+
+.route-strip {
+  display: flex;
+  align-items: center;
+  width: 220px;
+  margin-top: 28px;
+}
+
+.route-point {
+  width: 12px;
+  height: 12px;
+  border: 3px solid #10224b;
+  border-radius: 50%;
+  background: #f4b844;
+  box-shadow: 0 0 0 3px #f4b844;
+}
+
+.route-point-end {
+  background: #24734d;
+  box-shadow: 0 0 0 3px #24734d;
+}
+
+.route-line {
+  flex: 1;
+  height: 2px;
+  margin: 0 9px;
+  background: repeating-linear-gradient(90deg, #f4b844 0 8px, transparent 8px 14px);
+}
+
+.booking-ride-page .ride-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 0;
+  padding: 28px 46px 10px;
+  background: #fffdf8;
+}
+
+.booking-ride-page .highlight-card {
+  border: 1px solid #e1ddd3;
+  border-radius: 3px;
+  background: #f6f2e9;
+  box-shadow: none;
+}
+
+.booking-ride-page .highlight-card i {
+  background: rgba(36, 115, 77, 0.1);
+  color: #24734d;
+}
+
+.booking-ride-page .booking-form {
+  padding: 18px 46px 42px;
+}
+
+.booking-ride-page .form-section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #c6c0b4;
+  color: #10224b;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.booking-ride-page .form-section-title i {
+  color: #24734d;
+}
+
+.booking-ride-page label {
+  color: #26334d;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+}
+
+.booking-ride-page input,
+.booking-ride-page select,
+.booking-ride-page textarea {
+  border: 1px solid #d9d4c9;
+  border-radius: 2px;
+  background: #fff;
+  color: #26334d;
+}
+
+.booking-ride-page input:focus,
+.booking-ride-page select:focus,
+.booking-ride-page textarea:focus {
+  border-color: #24734d;
+  box-shadow: 0 0 0 3px rgba(36, 115, 77, 0.12);
+}
+
+.booking-ride-page .form-actions {
+  padding-top: 10px;
+  border-top: 1px dashed #c6c0b4;
+}
+
+.booking-ride-page .btn.primary {
+  background: #24734d;
+}
+
+@media (max-width: 600px) {
+  .booking-ride-page .booking-header {
+    padding: 26px 22px 32px;
+  }
+
+  .booking-ride-page .booking-header h1 {
+    font-size: 2rem;
+  }
+
+  .booking-brand {
+    align-items: flex-start;
+    font-size: 0.62rem;
+    line-height: 1.4;
+  }
+
+  .booking-brand img {
+    width: 46px;
+    height: 46px;
+  }
+
+  .booking-ride-page .booking-form {
+    padding: 14px 22px 30px;
+  }
+
+  .booking-ride-page .ride-highlights {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+}

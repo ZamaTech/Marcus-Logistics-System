@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="booking.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="booking-page.css" />
 </head>
 <body>
 
@@ -23,12 +24,39 @@
     </nav>
 
     <!-- BOOKING PAGE -->
-    <section class="booking-section">
+    <section class="booking-section booking-ride-page">
         <div class="booking-container">
             
             <div class="booking-header">
+                <div class="booking-brand">
+                    <img src="Images/logo.png" alt="Marcus Logistics and Shuttle Services (Pty) Ltd logo">
+                    <span>Marcus Logistics and Shuttle Services (Pty) Ltd</span>
+                </div>
                 <h1>Request a Ride</h1>
                 <p>Fill in the details below and we will arrange your transport.</p>
+                <div class="route-strip" aria-hidden="true">
+                    <span class="route-point"></span>
+                    <span class="route-line"></span>
+                    <span class="route-point route-point-end"></span>
+                </div>
+            </div>
+
+            <div class="courier-highlights ride-highlights">
+                <div class="highlight-card">
+                    <i class="fas fa-car-side"></i>
+                    <h4>Comfortable Journeys</h4>
+                    <p>Travel in comfort with a reliable ride arranged around your needs.</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>On-Time Pickup</h4>
+                    <p>We plan ahead so your driver is ready when and where you need them.</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-route"></i>
+                    <h4>Flexible Travel</h4>
+                    <p>Book local trips, airport transfers, and longer journeys with ease.</p>
+                </div>
             </div>
 
             <form class="booking-form">

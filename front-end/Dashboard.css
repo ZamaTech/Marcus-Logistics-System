@@ -12,7 +12,7 @@ body {
 
 /* NAVBAR */
 .navbar{
-  position:absolute ;        /* stay at top while scrolling */
+  position:fixed ;           /* stay at top while scrolling */
   top: 0;
   left: 0;
   width: 100%;

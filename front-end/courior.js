@@ -50,28 +50,28 @@ if (courierForm) {
            MESSAGE
         ========================= */
         const message =
-`📦 NEW PARCEL REQUEST
+`[NEW PARCEL REQUEST]
 
-👤 Sender: ${name}
-📞 WhatsApp: ${phone}
-📧 Email: ${email}
+Sender: ${name}
+WhatsApp: ${phone}
+Email: ${email}
 
-📦 Parcel Type: ${parcelType}
-⚖️ Estimated Weight: ${weight}
+Parcel Type: ${parcelType}
+Estimated Weight: ${weight}
 
-📍 Pickup:
+Pickup:
 ${pickup}
 ${pickupSuburb}
 ${pickupCity}
 
-🏁 Delivery:
+Delivery:
 ${destination}
 ${destinationSuburb}
 ${destinationCity}
 
-📅 Pickup Date: ${date}
+Pickup Date: ${date}
 
-📝 Instructions: ${notes}`;
+Instructions: ${notes}`;
 
         sessionStorage.setItem('whatsappMessage', message);
         window.location.href = 'confirm.html';
