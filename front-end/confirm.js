@@ -3,7 +3,7 @@ const sendBtn = document.getElementById('sendWhatsapp');
 const ticketTitle = document.getElementById('ticketTitle');
 const ticketStubTitle = document.getElementById('ticketStubTitle');
 
-const WHATSAPP_NUMBER = "27765082810";
+const WHATSAPP_NUMBER = "27749869434";
 
 const storedMessage = sessionStorage.getItem('whatsappMessage');
 const message = storedMessage
